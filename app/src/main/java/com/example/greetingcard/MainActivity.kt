@@ -49,6 +49,11 @@ fun Greeting3(name : String) {
 }
 
 @Composable
+fun Greeting4(name : String) {
+    Text(text = "Hola $name")
+}
+
+@Composable
 fun Greeting55(name : String) {
     Text(text = "Hola $name")
 }
@@ -60,5 +65,6 @@ fun DefaultPreview() {
         Greeting2("Maeg")
         Greeting3( "no calle")
         Greeting55(   "crespo")
+        Greeting4( "cambios")
     }
 }
