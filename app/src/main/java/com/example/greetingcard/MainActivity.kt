@@ -43,11 +43,16 @@ fun Greeting2(name : String) {
     Text(text = "Hola $name")
 }
 
+@Composable
+fun Greeting3(name : String) {
+    Text(text = "Hola $name")
+}
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
     GreetingCardTheme {
         Greeting("Geam")
         Greeting2("Maeg")
+        Greeting3(name = "calle")
     }
 }
