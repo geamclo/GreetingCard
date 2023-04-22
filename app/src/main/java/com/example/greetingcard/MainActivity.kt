@@ -38,11 +38,16 @@ fun Greeting(name: String) {
         Text(text = "Hi, my name is $name!", modifier = Modifier.padding(24.dp))
     }
 }
+@Composable
+fun Greeting2(name : String) {
+    Text(text = "Hola $name")
+}
 
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
     GreetingCardTheme {
         Greeting("Geam")
+        Greeting2("Maeg")
     }
 }
